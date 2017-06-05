@@ -1,0 +1,16 @@
+server:
+  port: 8002
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/localdb
+    username: localdb
+    password: localdb
+    driver-class-name: org.postgresql.Driver
+  main:
+    banner-mode: "off"
+  profiles:
+    active:
+    - dev
+endpoints:
+  sensitive: false
+
